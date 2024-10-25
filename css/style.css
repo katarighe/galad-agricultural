@@ -1,221 +1,350 @@
-/* Navbar Styles */
-.navbar {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.navbar .navbar-brand img {
-  height: 4rem;
-  width: auto;
-}
-.navbar .navbar-toggler {
-  border: none;
-  outline: none;
-  font-size: 1.8rem;
-}
-.navbar .navbar-collapse .navbar-nav li {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding-left: 1rem;
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Home Page Styles */
-.home-page-content {
-  padding-top: 12%;
-}
-.home-page-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 4rem;
+/* Background image and overlay */
+.bg-img {
+  background-image: url("images/main-picture");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-shadow: 2px 1px #333333;
-}
-.home-supporting-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 2px 1px #333333;
-}
-.homepage-btn-1 {
-  background: #00cc00;
-  color: white;
-  margin-left: 4px;
-  font-size: x-large;
-  border-radius: 0.4rem;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.homepage-btn-1:hover {
-  background: #004d00;
-  color: white;
-}
-
-/* About Us Section */
-#about,
-#mission,
-#vision,
-#team {
-  background-color: #ffffff; /* White background for sections */
-  border-radius: 8px; /* Rounded corners */
-  padding: 30px; /* Inner spacing */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-bottom: 30px; /* Spacing between sections */
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-}
-h2,
-h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  color: #343a40; /* Darker color for headings */
-  margin-bottom: 20px; /* Space below headings */
-}
-p {
-  line-height: 1.6; /* Improved line spacing for readability */
-}
-
-/* Call to Action Section */
-.text-center {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: #fff; /* White text */
-  padding: 30px; /* Inner spacing */
-  border-radius: 8px; /* Rounded corners */
-  margin-top: 30px; /* Space above */
-}
-.text-center h3 {
-  margin-bottom: 15px; /* Space below */
-}
-.btn-primary {
-  background-color: #fff; /* White button background */
-  color: #007bff; /* Bootstrap primary text color */
-  border: 2px solid #007bff; /* Outline border */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
-.btn-primary:hover {
-  background-color: #007bff; /* Change background on hover */
-  color: #fff; /* White text on hover */
-}
-
-/* Team Section */
-.team-title {
-  font-size: 2rem;
-  font-family: "Raleway", sans-serif;
-  color: #4d4d4d;
-  font-weight: 500;
-  text-align: center;
-  text-transform: initial;
-  margin: 30px 0 60px;
-}
-.team-row .card-deck .card {
-  width: 280px;
-  height: 480px;
-  border: hidden;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.team-row .card-deck .card .img-box {
-  width: 260px;
-  height: 260px;
-  align-self: center;
-  overflow: hidden;
-}
-.team-row .card-deck .card img {
-  width: 260px;
-  height: auto;
-  margin-top: 2px;
-  align-self: center;
-}
-.team-row .card-deck .card-body .card-title,
-.team-row .card-deck .card-body .card-subtitle,
-.team-row .card-deck .card-body .card-text p {
-  font-family: "Raleway", sans-serif;
-  color: #4d4d4d;
-  text-align: start;
-  text-transform: initial;
   position: relative;
 }
-.team-row .card-deck .card-body .card-title {
-  font-size: 24px;
-  font-weight: 500;
-}
-.team-row .card-deck .card-body .card-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-}
-.team-row .card-deck .card-body .card-text p {
-  font-size: 13px;
-  font-weight: 500;
-}
-.team-row .card-deck .card-body .teams-socials {
-  font-size: 20px;
-  color: #262626;
-  cursor: pointer;
-}
 
-/* Clients Section */
-.clients-title {
-  font-size: 2rem;
-  font-family: "Raleway", sans-serif;
-  color: #4d4d4d;
-  font-weight: 500;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 30px 0 60px;
-}
-.card-columns .card {
-  border: none;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-.card-columns .card img {
-  width: auto;
-  height: 160px;
 }
 
-/* Opening Hours and Contact Info */
-.opening-hours h3,
-.socials h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.8rem; /* Slightly larger headings */
-  margin-top: 20px; /* Space above the headings */
-}
-.social-icons i {
-  margin: 0 10px; /* Space between icons */
-  font-size: 2rem; /* Icon size */
-  color: #007bff; /* Primary color */
-  transition: color 0.3s; /* Smooth transition */
-}
-.social-icons i:hover {
-  color: #0056b3; /* Darker color on hover */
+.home-page-content {
+  position: relative; /* Allows positioning within the overlay */
 }
 
-/* Media Queries */
-@media (max-width: 576px) {
-  /* Home Section */
-  .home-page-content {
-    padding-top: 10rem;
-  }
+.home-page-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-supporting-text {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .home-page-text {
-    font-size: 1.6rem;
-  }
-  .home-buttons .homepage-btn-1,
-  .homepage-btn-2 {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
 
-  /* Team Section */
-  .team-row .card-deck .card {
-    width: 400px;
-    height: inherit;
+  .home-supporting-text {
+    font-size: 1.2rem;
   }
-  .team-row .card-deck .card .img-box {
-    width: 380px;
-    height: 380px;
-  }
-  .team-row .card-deck .card img {
-    width: 360px;
-    height: auto;
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styles */
+section {
+  margin: 40px 0;
+}
+
+/* Heading styles */
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
   }
 
-  /* Contact Section */
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styles */
+section {
+  margin: 40px 0;
+}
+
+/* Outline styles */
+.outline {
+  border: 1px solid #007bff; /* Blue outline */
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Heading styles */
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background for navbar */
+}
+
+/* Page Header */
+header {
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem; /* Responsive heading */
+}
+
+header p {
+  font-size: 1.2rem; /* Responsive subheading */
+}
+
+/* Factories Gallery Section */
+.container {
+  margin-top: 2rem;
+}
+
+.img-fluid {
+  border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+  padding: 1rem 0; /* Padding for the footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  header p {
+    font-size: 1rem; /* Smaller subheading on mobile */
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.team-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img-box {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  transition: transform 0.3s;
+}
+
+.img-box:hover .img-fluid {
+  transform: scale(1.1);
+}
+
+.teams-socials {
+  margin-top: 10px;
+}
+
+.teams-socials i {
+  transition: color 0.3s;
+}
+
+.teams-socials i:hover {
+  color: #007bff;
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background for navbar */
+}
+
+/* Main Content */
+.clients-title {
+  color: #333; /* Dark color for the title */
+}
+
+/* Partners content */
+.partners-content {
+  margin-top: 2rem;
+}
+
+.card {
+  transition: transform 0.2s; /* Add a subtle zoom effect on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .h1-responsive {
+    font-size: 2rem;
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact section styles */
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-section .card {
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.contact-section .card:hover {
+  transform: scale(1.02);
+}
+
+.contact-section .card-title {
+  font-size: 2.4rem;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.contact-section .form-control {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  color: white;
+  background: #007bff;
+}
+
+/* Opening hours and contact info styles */
+.opening-hours h3 {
+  font-size: 1.8rem;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
   .contact-section .card {
-    width: 100%; /* Full width on small screens */
+    width: 100%;
   }
 }

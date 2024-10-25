@@ -9,54 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:wght@500;600;700&family=Oxygen:wght@300;400;700&family=Raleway:wght@400;500&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Contact Us - Galad Agricultral</title>
-    <style>
-      .contact-section {
-        margin-top: 30px;
-      }
-      .contact-section .card {
-        margin-bottom: 2rem;
-        transition: transform 0.2s;
-      }
-      .contact-section .card:hover {
-        transform: scale(1.02);
-      }
-      .contact-section .card-title {
-        font-size: 2.4rem;
-        color: #4d4d4d;
-        text-align: center;
-      }
-      .contact-section .form-control {
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-      }
-      .submit-btn {
-        color: white;
-        background: #007bff;
-      }
-      .opening-hours h3,
-      .socials h3 {
-        font-size: 1.8rem;
-      }
-      .social-icons i {
-        margin: 0 10px;
-        font-size: 2rem;
-        color: #007bff;
-        transition: color 0.3s;
-      }
-      .social-icons i:hover {
-        color: #0056b3;
-      }
-      @media (max-width: 576px) {
-        .contact-section .card {
-          width: 100%;
-        }
-      }
-    </style>
+    <title>Contact Us - Galad Agriculture</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -64,23 +21,24 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
-            class="img-responsive"
             src="images/Example logo.png"
-            alt="Logo"
+            alt="Galad Agriculture Logo"
+            class="img-responsive"
+            style="max-width: 150px"
           />
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#collapsibleNavbar"
+          data-target="#navbarNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About Us</a>
@@ -95,21 +53,21 @@
               <a class="nav-link" href="partners.html">Partners</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- /Navbar -->
+
     <div class="container">
-      <h1 class="h1-responsive text-center shadow-sm py-2">Talk to Us</h1>
+      <h1 class="h1-responsive text-center shadow-sm py-5">Contact Us</h1>
       <div class="contact-section">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">How Can We Help?</h4>
+                <h4 class="card-title text-center">How Can We Help?</h4>
                 <form action="" method="POST">
                   <div class="form-group">
                     <label for="name">Name</label>
@@ -148,20 +106,21 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 opening-hours">
+
+          <div class="col-md-6 opening-hours">
             <h3>Opening Hours</h3>
             <hr />
-            <p><i class="fa fa-clock-o"></i> Saturday - Thursday: 08:00 - 17:00</p>
+            <p>
+              <i class="fa fa-clock-o"></i> Saturday - Thursday: 08:00 - 17:00
+            </p>
             <p><i class="fa fa-clock-o"></i> Friday: 08:00 - 12:00</p>
             <p><i class="fa fa-clock-o"></i> Public Holidays: 08:00 - 12:00</p>
 
             <h3>Get in Touch</h3>
             <hr />
-            <p><i class="fa fa-envelope"></i> info@galad-agricultre.com</p>
+            <p><i class="fa fa-envelope"></i> info@galad-agriculture.com</p>
             <p><i class="fa fa-phone"></i> +252617465739</p>
-            <p>
-              <i class="fa fa-home"></i> KM4<br />Mogadishu, Somalia
-            </p>
+            <p><i class="fa fa-home"></i> KM4, Mogadishu, Somalia</p>
 
             <h3>Follow Us</h3>
             <div class="social-icons">
@@ -174,9 +133,13 @@
       </div>
     </div>
 
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Galad Agriculture. All rights reserved.</p>
+    </footer>
+
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

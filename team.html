@@ -9,52 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:wght@500;600;700&family=Oxygen:wght@300;400;700&family=Raleway:wght@400;500&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Meet Our Team</title>
-    <style>
-      .team-title {
-        font-family: "Montserrat", sans-serif;
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 30px;
-      }
-      .card {
-        border: none;
-        transition: transform 0.3s;
-      }
-      .card:hover {
-        transform: scale(1.05);
-      }
-      .teams-socials i {
-        transition: color 0.3s;
-      }
-      .teams-socials i:hover {
-        color: #007bff;
-      }
-      .img-box {
-        overflow: hidden;
-        border-radius: 10px;
-      }
-      .img-top {
-        transition: transform 0.3s;
-      }
-      .img-box:hover .img-top {
-        transform: scale(1.1);
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -62,9 +25,10 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
-            class="img-responsive"
             src="images/Example logo.png"
             alt="Logo"
+            class="img-responsive"
+            style="max-width: 150px"
           />
         </a>
         <button
@@ -78,7 +42,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About Us</a>
@@ -87,7 +51,7 @@
               <a class="nav-link" href="factories.html">Factories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="team.html">Team</a>
+              <a class="nav-link active" href="team.html">Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="partners.html">Partners</a>
@@ -100,149 +64,115 @@
       </div>
     </nav>
     <!-- /Navbar -->
+
     <div class="container">
-      <h1 class="h1-responsive team-title text-center shadow-sm py-4">
-        Meet Our Team
-      </h1>
-      <div class="row team-row">
+      <h1 class="team-title text-center shadow-sm py-5">Meet Our Team</h1>
+      <div class="row">
         <div class="card-deck">
           <div class="card">
-            <div class="img-box p-1">
+            <div class="img-box">
               <img
-                class="img-fluid img-top"
+                class="img-fluid"
                 src="images/38.jpg"
                 alt="Marcia Pittman, CEO and Founder"
               />
             </div>
             <div class="card-body text-center">
-              <h3 class="h3-responsive">Marcia Pittman</h3>
+              <h3>Marcia Pittman</h3>
               <h6 class="text-muted">CEO, Founder</h6>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Deleniti, blanditiis.
               </p>
-              <div class="teams-socials m-1">
-                <a href="#" aria-label="Like on Facebook"
-                  ><i class="fa fa-facebook mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Twitter"
-                  ><i class="fa fa-twitter mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Instagram"
-                  ><i class="fa fa-instagram mx-1"></i
-                ></a>
-                <a href="#" aria-label="Add on LinkedIn"
-                  ><i class="fa fa-linkedin mx-1"></i
-                ></a>
+              <div class="teams-socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
-          <!-- /card 1 -->
-
+          <!-- Repeat for other team members -->
           <div class="card">
-            <div class="img-box p-1">
+            <div class="img-box">
               <img
-                class="img-fluid img-top"
+                class="img-fluid"
                 src="images/36.jpg"
                 alt="Eve Smith, Managing Director"
               />
             </div>
             <div class="card-body text-center">
-              <h3 class="h3-responsive">Eve Smith</h3>
+              <h3>Eve Smith</h3>
               <h6 class="text-muted">Managing Director</h6>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Deleniti, blanditiis.
               </p>
-              <div class="teams-socials m-1">
-                <a href="#" aria-label="Like on Facebook"
-                  ><i class="fa fa-facebook mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Twitter"
-                  ><i class="fa fa-twitter mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Instagram"
-                  ><i class="fa fa-instagram mx-1"></i
-                ></a>
-                <a href="#" aria-label="Add on LinkedIn"
-                  ><i class="fa fa-linkedin mx-1"></i
-                ></a>
+              <div class="teams-socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
-          <!-- /card 2 -->
-
           <div class="card">
-            <div class="img-box p-1">
+            <div class="img-box">
               <img
-                class="img-fluid img-top"
+                class="img-fluid"
                 src="images/img19.jpg"
                 alt="Josh Scott, Manager"
               />
             </div>
             <div class="card-body text-center">
-              <h3 class="h3-responsive">Josh Scott</h3>
+              <h3>Josh Scott</h3>
               <h6 class="text-muted">Manager</h6>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Deleniti, blanditiis.
               </p>
-              <div class="teams-socials m-1">
-                <a href="#" aria-label="Like on Facebook"
-                  ><i class="fa fa-facebook mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Twitter"
-                  ><i class="fa fa-twitter mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Instagram"
-                  ><i class="fa fa-instagram mx-1"></i
-                ></a>
-                <a href="#" aria-label="Add on LinkedIn"
-                  ><i class="fa fa-linkedin mx-1"></i
-                ></a>
+              <div class="teams-socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
-          <!-- /card 3 -->
-
           <div class="card">
-            <div class="img-box p-1">
+            <div class="img-box">
               <img
-                class="img-fluid img-top"
+                class="img-fluid"
                 src="images/img17.jpg"
                 alt="Mpho Pule, Head Facilitator"
               />
             </div>
             <div class="card-body text-center">
-              <h3 class="h3-responsive">Mpho Pule</h3>
+              <h3>Mpho Pule</h3>
               <h6 class="text-muted">Head Facilitator</h6>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Deleniti, blanditiis.
               </p>
-              <div class="teams-socials m-1">
-                <a href="#" aria-label="Like on Facebook"
-                  ><i class="fa fa-facebook mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Twitter"
-                  ><i class="fa fa-twitter mx-1"></i
-                ></a>
-                <a href="#" aria-label="Follow on Instagram"
-                  ><i class="fa fa-instagram mx-1"></i
-                ></a>
-                <a href="#" aria-label="Add on LinkedIn"
-                  ><i class="fa fa-linkedin mx-1"></i
-                ></a>
+              <div class="teams-socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
-          <!-- /card 4 -->
         </div>
         <!-- /card deck -->
       </div>
-      <!-- /team-row -->
+      <!-- /row -->
     </div>
     <!-- /container -->
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Galad Agriculture. All rights reserved.</p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <script
@@ -256,11 +186,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
-      integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA=="
-      crossorigin="anonymous"
-    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
