@@ -1,0 +1,560 @@
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image and overlay */
+.bg-img {
+  background-image: url("/images/background.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.bg-img2 {
+  background-image: url("/images/background-2.jpg");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+a .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-page-content {
+  position: relative; /* Allows positioning within the overlay */
+}
+
+.home-page-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-supporting-text {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-page-text {
+    font-size: 2.5rem;
+  }
+
+  .home-supporting-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styles */
+section {
+  margin: 40px 0;
+}
+
+/* Heading styles */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styles */
+section {
+  margin: 40px 0;
+}
+
+/* Outline styles */
+.outline {
+  border: 1px solid #007bff; /* Blue outline */
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Heading styles */
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background for navbar */
+  padding: 10px 20px 10px;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Button Hover Transition */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0062cc; /* Darker shade */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Content Fade-In */
+.home-page-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contentFadeIn 1s ease-in forwards 0.5s;
+}
+
+/* Keyframes for fade-in effects */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page Header */
+header {
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem; /* Responsive heading */
+}
+
+header p {
+  font-size: 1.2rem; /* Responsive subheading */
+}
+
+/* Factories Gallery Section */
+.container {
+  margin-top: 2rem;
+}
+
+.img-fluid {
+  border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+  padding: 1rem 0; /* Padding for the footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  header p {
+    font-size: 1rem; /* Smaller subheading on mobile */
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.team-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img-box {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  transition: transform 0.3s;
+}
+
+.img-box:hover .img-fluid {
+  transform: scale(1.1);
+}
+
+.teams-socials {
+  margin-top: 10px;
+}
+
+.teams-socials i {
+  transition: color 0.3s;
+}
+
+.teams-socials i:hover {
+  color: #007bff;
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background for navbar */
+  padding: 10px 20px 10px;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Main Content */
+.clients-title {
+  color: #333; /* Dark color for the title */
+}
+
+/* Partners content */
+.partners-content {
+  margin-top: 2rem;
+}
+
+.card {
+  transition: transform 0.2s; /* Add a subtle zoom effect on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa; /* Light background for footer */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .h1-responsive {
+    font-size: 2rem;
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact section styles */
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-section .card {
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.contact-section .card:hover {
+  transform: scale(1.02);
+}
+
+.contact-section .card-title {
+  font-size: 2.4rem;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.contact-section .form-control {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  color: white;
+  background: #007bff;
+}
+
+/* Opening hours and contact info styles */
+.opening-hours h3 {
+  font-size: 1.8rem;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .contact-section .card {
+    width: 100%;
+  }
+}
+
+/* Navbar Fade-In */
+.navbar {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Section Heading Animation */
+.section-heading {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+/* Section Content Fade-In */
+.section-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contentFadeIn 1s ease-in forwards 0.5s;
+}
+
+/* Button Hover Transition */
+.btn-primary,
+.btn-cta {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-cta:hover {
+  background-color: #0062cc; /* Darker shade */
+  transform: scale(1.05);
+}
+
+/* Keyframes for fade-in and slide-in effects */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page Header Animation */
+.animated-header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-in forwards;
+}
+
+/* Factories Gallery Image Animation */
+.factory-image {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-in forwards;
+  animation-delay: 0.5s; /* Delay for the first image */
+}
+
+.factory-image:nth-child(3n) {
+  animation-delay: 0.6s; /* Delay for every third image */
+}
+
+.factory-image:nth-child(3n + 1) {
+  animation-delay: 0.4s; /* Delay for every first image in the group of three */
+}
+
+.factory-image:nth-child(3n + 2) {
+  animation-delay: 0.5s; /* Delay for every second image in the group of three */
+}
+
+/* Keyframes for header and image animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CSS for animations and transitions */
+.card {
+  transform: translateY(20px); /* Slightly lower */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.card.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Original position */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-title {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add the following styles for animations and transitions */
+
+/* Animation for the partner logos */
+.partner-logo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.partner-logo.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect for the partner logos */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
