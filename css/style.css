@@ -18,7 +18,7 @@ body {
   color: white;
   position: relative;
 }
-
+a
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -494,3 +494,50 @@ body {
   }
 }
 
+/* CSS for animations and transitions */
+.card {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly lower */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.card.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Original position */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-title {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add the following styles for animations and transitions */
+
+/* Animation for the partner logos */
+.partner-logo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.partner-logo.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect for the partner logos */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
