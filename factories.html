@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Factories - Galad Agricultural</title>
-    <link rel="icon" href="./images/agriculture.png" type="image/png">
+    <link rel="icon" href="./images/agriculture.png" type="image/png" />
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -22,11 +22,11 @@
       body {
         transition: opacity 0.5s ease;
       }
-  
+
       .fade-out {
         opacity: 0;
       }
-  
+
       .fade-in {
         opacity: 1;
       }
@@ -176,6 +176,13 @@
       </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class="text-center my-5 outline section-content">
+      <h3>Ready to Get Started?</h3>
+      <p>Contact us today to learn how we can assist you!</p>
+      <a href="contact.html" class="btn btn-primary btn-cta">Get in Touch</a>
+    </section>
+
     <!-- Footer Section -->
     <footer class="text-center py-4">
       <p>&copy; 2024 Galad Agricultural. All rights reserved.</p>
@@ -192,14 +199,14 @@
       $(document).ready(function () {
         // Fade out effect on page load
         $("body").addClass("fade-in");
-  
+
         // Fade out effect before navigating to a new page
         $("a").on("click", function (event) {
           event.preventDefault(); // Prevent default anchor click behavior
           var link = $(this).attr("href");
-  
+
           $("body").removeClass("fade-in").addClass("fade-out");
-  
+
           setTimeout(function () {
             window.location = link; // Redirect after fade-out
           }, 500); // Time should match the CSS transition duration
