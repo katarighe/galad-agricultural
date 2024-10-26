@@ -495,7 +495,6 @@ body {
 
 /* CSS for animations and transitions */
 .card {
-  opacity: 0; /* Initially hidden */
   transform: translateY(20px); /* Slightly lower */
   transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
 }
@@ -540,3 +539,4 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
