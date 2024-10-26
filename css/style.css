@@ -380,3 +380,51 @@ body {
     width: 100%;
   }
 }
+
+/* Navbar Fade-In */
+.navbar {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Section Heading Animation */
+.section-heading {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+/* Section Content Fade-In */
+.section-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contentFadeIn 1s ease-in forwards 0.5s;
+}
+
+/* Button Hover Transition */
+.btn-primary,
+.btn-cta {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-cta:hover {
+  background-color: #0062cc; /* Darker shade */
+  transform: scale(1.05);
+}
+
+/* Keyframes for fade-in and slide-in effects */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes contentFadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
