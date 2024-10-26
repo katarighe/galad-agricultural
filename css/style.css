@@ -182,13 +182,23 @@ body {
 
 /* Keyframes for fade-in effects */
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes contentFadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Page Header */
@@ -415,16 +425,72 @@ body {
 
 /* Keyframes for fade-in and slide-in effects */
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromLeft {
-  0% { opacity: 0; transform: translateX(-30px); }
-  100% { opacity: 1; transform: translateX(0); }
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes contentFadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* Page Header Animation */
+.animated-header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-in forwards;
+}
+
+/* Factories Gallery Image Animation */
+.factory-image {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-in forwards;
+  animation-delay: 0.5s; /* Delay for the first image */
+}
+
+.factory-image:nth-child(3n) {
+  animation-delay: 0.6s; /* Delay for every third image */
+}
+
+.factory-image:nth-child(3n + 1) {
+  animation-delay: 0.4s; /* Delay for every first image in the group of three */
+}
+
+.factory-image:nth-child(3n + 2) {
+  animation-delay: 0.5s; /* Delay for every second image in the group of three */
+}
+
+/* Keyframes for header and image animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
