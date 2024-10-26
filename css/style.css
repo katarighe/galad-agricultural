@@ -338,6 +338,36 @@ body {
   padding: 0;
 }
 
+/* Contact section styles */
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-section .card {
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.contact-section .card:hover {
+  transform: scale(1.02);
+}
+
+.contact-section .card-title {
+  font-size: 2.4rem;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.contact-section .form-control {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  color: white;
+  background: #007bff;
+}
+
 /* Opening hours and contact info styles */
 .opening-hours h3 {
   font-size: 1.8rem;
