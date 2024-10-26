@@ -16,6 +16,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Add fade-in/out effects */
+      body {
+        transition: opacity 0.5s ease;
+      }
+  
+      .fade-out {
+        opacity: 0;
+      }
+  
+      .fade-in {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -158,5 +172,23 @@
         });
       });
     </script>
+        <script>
+          $(document).ready(function () {
+            // Fade out effect on page load
+            $("body").addClass("fade-in");
+      
+            // Fade out effect before navigating to a new page
+            $("a").on("click", function (event) {
+              event.preventDefault(); // Prevent default anchor click behavior
+              var link = $(this).attr("href");
+      
+              $("body").removeClass("fade-in").addClass("fade-out");
+      
+              setTimeout(function () {
+                window.location = link; // Redirect after fade-out
+              }, 500); // Time should match the CSS transition duration
+            });
+          });
+        </script>
   </body>
 </html>
