@@ -22,17 +22,17 @@
       body {
         transition: opacity 0.5s ease;
       }
-  
+
       .fade-out {
         opacity: 0;
       }
-  
+
       .fade-in {
         opacity: 1;
       }
     </style>
     <title>Meet Our Team - Galad Agriculture</title>
-    <link rel="icon" href="./images/agriculture.png" type="image/png">
+    <link rel="icon" href="./images/agriculture.png" type="image/png" />
   </head>
   <body>
     <!-- Navbar -->
@@ -184,6 +184,13 @@
     </div>
     <!-- /container -->
 
+    <!-- Call to Action -->
+    <section class="text-center my-5 outline section-content">
+      <h3>Ready to Get Started?</h3>
+      <p>Contact us today to learn how we can assist you!</p>
+      <a href="contact.html" class="btn btn-primary btn-cta">Get in Touch</a>
+    </section>
+
     <!-- Footer Section -->
     <footer class="text-center py-4">
       <p>&copy; 2024 Galad Agriculture. All rights reserved.</p>
@@ -206,31 +213,33 @@
     <script>
       // JavaScript to add 'show' class to cards on load
       $(document).ready(function () {
-        $('.card').each(function (index) {
-          $(this).delay(index * 200).queue(function (next) {
-            $(this).addClass('show');
-            next();
-          });
+        $(".card").each(function (index) {
+          $(this)
+            .delay(index * 200)
+            .queue(function (next) {
+              $(this).addClass("show");
+              next();
+            });
         });
       });
     </script>
-        <script>
-          $(document).ready(function () {
-            // Fade out effect on page load
-            $("body").addClass("fade-in");
-      
-            // Fade out effect before navigating to a new page
-            $("a").on("click", function (event) {
-              event.preventDefault(); // Prevent default anchor click behavior
-              var link = $(this).attr("href");
-      
-              $("body").removeClass("fade-in").addClass("fade-out");
-      
-              setTimeout(function () {
-                window.location = link; // Redirect after fade-out
-              }, 500); // Time should match the CSS transition duration
-            });
-          });
-        </script>
+    <script>
+      $(document).ready(function () {
+        // Fade out effect on page load
+        $("body").addClass("fade-in");
+
+        // Fade out effect before navigating to a new page
+        $("a").on("click", function (event) {
+          event.preventDefault(); // Prevent default anchor click behavior
+          var link = $(this).attr("href");
+
+          $("body").removeClass("fade-in").addClass("fade-out");
+
+          setTimeout(function () {
+            window.location = link; // Redirect after fade-out
+          }, 500); // Time should match the CSS transition duration
+        });
+      });
+    </script>
   </body>
 </html>
