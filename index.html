@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Add fade-in/out effects */
+    body {
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    .fade-in {
+      opacity: 1;
+    }
+  </style>
+  <title>Homepage - Galad Agriculture</title>
+  <link rel="icon" href="./images/agriculture.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/company-logo.PNG" alt="Galad Agriculture Logo" class="img-responsive"
+          style="max-width: 150px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+        <!-- Language Link -->
+        <ul class="navbar-nav ml-md-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./so/index.html" onclick="changeLanguage('so')" style="color: green;">Soomaali</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="bg-img">
+    <div class="overlay">
+      <div class="home-page-content">
+        <h1 class="home-page-text text-center" style="color: black">
+          Galad Agriculture
+        </h1>
+        <h5 class="home-supporting-text text-center" style="color: black">
+          Bringing you the freshest produce in the land
+        </h5>
+        <a href="contact.html" class="btn btn-primary btn-lg" style="
+              display: block;
+              margin: 0 auto;
+              text-align: center;
+              width: fit-content;
+            ">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Galad Agriculture. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Fade out effect on page load
+      $("body").addClass("fade-in");
+
+      // Fade out effect before navigating to a new page
+      $("a").on("click", function (event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        var link = $(this).attr("href");
+
+        $("body").removeClass("fade-in").addClass("fade-out");
+
+        setTimeout(function () {
+          window.location = link; // Redirect after fade-out
+        }, 500); // Time should match the CSS transition duration
+      });
+    });
+  </script>
+</body>
+
+</html>
